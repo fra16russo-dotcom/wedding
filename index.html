@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>
+Francesca & Charles
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="hero">
+
+<nav>
+
+<button onclick="changeLang('it')">
+
+🇮🇹 IT
+
+</button>
+
+
+<button onclick="changeLang('en')">
+
+🇺🇸 EN
+
+</button>
+
+</nav>
+
+
+<div class="hero-content">
+
+<h1>
+
+<span class="name">
+Charles
+</span>
+
+<span class="amp">
+&
+</span>
+
+<span class="name">
+Francesca
+</span>
+
+</h1>
+
+
+<p
+
+data-it="28 Maggio 2027"
+
+data-en="May 28th, 2027">
+
+28 Maggio 2027
+
+</p>
+
+<div id="countdown">
+
+<div class="time-box">
+
+<span id="days">
+000
+</span>
+
+<p
+data-it="giorni"
+data-en="days">
+
+giorni
+
+</p>
+
+</div>
+
+
+<div class="time-box">
+
+<span id="hours">
+00
+</span>
+
+<p
+data-it="ore"
+data-en="hours">
+
+ore
+
+</p>
+
+</div>
+
+
+<div class="time-box">
+
+<span id="minutes">
+00
+</span>
+
+<p
+data-it="minuti"
+data-en="minutes">
+
+minuti
+
+</p>
+
+</div>
+
+</div>
+<p
+id="timezone-label">
+
+Ora locale: Italia 🇮🇹
+
+</p>
+
+<a
+
+href="#cerimonia"
+class="button"
+
+
+data-it="Scopri"
+
+data-en="Discover">
+
+Scopri
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section
+id="cerimonia"
+class="photo-section church">
+
+<div class="overlay-card">
+
+<h2
+data-it="Cerimonia"
+data-en="Celebration of Marriage">
+
+Cerimonia
+
+</h2>
+
+<h3>
+
+Chiesa Madre
+
+</h3>
+
+<p>
+
+11:00 AM
+
+</p>
+
+<a
+
+class="button"
+
+href="https://maps.app.goo.gl/CcFTNZ9yWrULdKiXA"
+
+target="_blank"
+
+data-it="Apri indicazioni"
+
+data-en="Open directions">
+
+Apri indicazioni
+
+</a>
+
+</div>
+
+</section>
+
+<section class="photo-section venue">
+
+<div class="overlay-card">
+
+<h2
+data-it="Ricevimento"
+data-en="Venue">
+
+Ricevimento
+
+</h2>
+
+<h3>
+
+Masseria San Francesco
+
+</h3>
+
+<p>
+
+2:00 PM
+
+</p>
+
+<a
+
+class="button"
+
+href="https://maps.app.goo.gl/SAuZiAaYVUTBG46w9"
+
+target="_blank"
+
+data-it="Apri indicazioni"
+
+data-en="Open directions">
+
+Apri indicazioni
+
+
+
+
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+<section id="rsvp">
+
+<h2>
+
+RSVP
+
+</h2>
+
+
+<p
+
+data-it="Conferma la tua presenza"
+
+data-en="Confirm your attendance">
+
+Conferma la tua presenza
+
+</p>
+
+
+<a
+
+class="button"
+
+href="https://forms.gle/wtW8qcMtDBejGKG9A"
+
+target="_blank"
+
+data-it="Compila il form"
+
+data-en="Complete RSVP">
+
+Compila il form
+
+</a>
+
+</section>
+
+<section id="tips">
+
+<h2
+data-it="Per i nostri ospiti"
+data-en="For our guests">
+
+Per i nostri ospiti
+
+</h2>
+
+
+<div class="tips-grid">
+
+
+<div class="tip-card">
+
+<h3>🏨</h3>
+
+<p
+data-it="Dove dormire"
+data-en="Where to stay">
+
+Dove dormire
+
+</p>
+
+<div class="hidden-links">
+
+<a href="#" target="_blank">
+
+Hotel 1
+
+</a>
+
+<a href="#" target="_blank">
+
+Hotel 2
+
+</a>
+
+<a href="#" target="_blank">
+
+Hotel vicino alla Masseria
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="tip-card">
+
+<h3>🍝</h3>
+
+<p
+data-it="Dove mangiare"
+data-en="Where to eat">
+
+Dove mangiare
+
+</p>
+
+<div class="hidden-links">
+
+<a href="#">
+
+Pizza locale</a>
+
+<a href="#">
+
+Gelato</a>
+
+<a href="#">
+
+Cena tipica</a>
+
+</div>
+
+</div>
+
+
+
+<div class="tip-card">
+
+<h3>🚗</h3>
+
+<p
+data-it="Come muoversi"
+data-en="Getting around">
+
+Come muoversi
+
+</p>
+
+<div class="hidden-links">
+
+<a href="#">
+
+Auto a noleggio</a>
+
+<a href="#">
+
+Taxi</a>
+
+<a href="#">
+
+Parcheggi</a>
+
+</div>
+
+</div>
+
+
+
+<div class="tip-card">
+
+<h3>🛍</h3>
+
+<p
+data-it="Beauty & Shopping"
+data-en="Beauty & Shopping">
+
+Beauty & Shopping
+
+</p>
+
+<div class="hidden-links">
+
+<a href="#">
+
+Parrucchiere</a>
+
+<a href="#">
+
+Shopping</a>
+
+<a href="#">
+
+Ultimo outfit</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+<section id="places">
+
+<h2
+data-it="Qualche idea per il viaggio ✨"
+data-en="A few ideas for your trip ✨">
+
+Qualche idea per il viaggio ✨
+
+</h2>
+
+
+<p
+class="places-subtitle"
+
+data-it="Se avete qualche giorno in più… ecco alcuni posti che amiamo e che valgono una deviazione 🤍"
+
+data-en="If you're staying a little longer… here are some places we love and that are worth the detour 🤍">
+
+Se avete qualche giorno in più…
+
+</p>
+
+
+<div class="places-container">
+
+<img
+
+src="images/places.png"
+
+class="places-map"
+
+alt="Italy travel map">
+
+</div>
+
+</section>
+
+<section id="travel">
+
+<h2
+data-it="Trova il tuo compagno di viaggio"
+data-en="Find your travel buddy">
+
+Trova il tuo compagno di viaggio
+
+</h2>
+
+
+<p
+class="travel-subtitle"
+
+data-it="Trova altri ospiti che partono dalla tua zona ✈"
+data-en="Meet other guests travelling from your area ✈">
+
+Trova altri ospiti
+
+</p>
+
+
+<div class="world-map">
+
+<!-- USA -->
+
+<a
+href="https://chat.whatsapp.com/GyOCt7PIANHKltFP9pcEU8"
+target="_blank"
+class="map-point usa">
+
+<span class="emoji">
+🇺🇸
+</span>
+
+<span
+data-it="America"
+data-en="America">
+
+America
+
+</span>
+
+</a>
+
+
+
+<!-- ITALIA -->
+
+<a
+href="https://chat.whatsapp.com/LhCouva7Sho2Byfqw1CB75"
+target="_blank"
+class="map-point italy">
+
+<span class="emoji">
+🇮🇹
+</span>
+
+<span
+data-it="Italia"
+data-en="Italy">
+
+Italia
+
+</span>
+
+</a>
+
+
+
+<!-- OTHER -->
+
+<a
+href="https://chat.whatsapp.com/HatoxswlgyG7pvvHkpctCT"
+target="_blank"
+class="map-point world">
+
+<span class="emoji">
+🌍
+</span>
+
+<span
+data-it="Other places"
+data-en="Other places">
+
+Other places
+
+</span>
+
+</a>
+
+
+</div>
+
+</section>
+
+<footer>
+
+Francesca & Charles · 2027
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
